@@ -1,16 +1,19 @@
 <template>
-  <ComponentA msg="Welcome to Your Vue.js App"/>
+  <SettingsProvider>
+    <ThemeButton />
+  </SettingsProvider>
 </template>
 
 <script>
-import ComponentA from './components/ComponentA.vue'
+  
+  import SettingsProvider from './SettingsProvider.vue'
+  import ThemeButton from './ThemeButton.vue'
 
-export default {
-  name: 'App',
-  components: {
-    ComponentA
+  export default {
+    name: 'App',
+    components: { SettingsProvider, ThemeButton }
   }
-}
+
 </script>
 
 <style>
