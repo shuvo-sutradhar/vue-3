@@ -8,6 +8,7 @@
 <script>
 import { ref, onMounted, watch, computed } from 'vue'
 export default {
+	
 	props: {
 		emoji: { type: String, default: '💖' }
 	},
@@ -16,7 +17,7 @@ export default {
 	setup(props) {
 
 		onMounted(() => {
-			console.log("Counter component has been mounted!");
+			// console.log("Counter component has been mounted!");
 		})
 
 		const counter = ref(0);
